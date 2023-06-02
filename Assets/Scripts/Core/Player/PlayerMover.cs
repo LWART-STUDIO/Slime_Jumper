@@ -1,3 +1,4 @@
+using System;
 using Core.Walls;
 using Obi;
 using UnityEngine;
@@ -66,6 +67,11 @@ namespace Core.Player
         private void Flip()
         {
             _jumpDirectionX *= -1;
+        }
+
+        public void ResetFlip()
+        {
+            _jumpDirectionX = 1;
         }
     }
 }

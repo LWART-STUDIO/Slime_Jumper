@@ -1,11 +1,12 @@
 using UnityEngine;
+using Zenject;
 
 namespace Core.Camera
 {
     [RequireComponent(typeof(UnityEngine.Camera))]
     public class CameraMover : MonoBehaviour
     {
-        [SerializeField] private Player.Player _target;
+        [Inject] private Player.Player _target;
         [SerializeField] private float _verticalSpeed;
         [SerializeField] private float _horizontalSpeed;
         [SerializeField] private float _shearEdge;
@@ -14,6 +15,7 @@ namespace Core.Camera
         private Vector2 _targetScreenPosition;
         private float _widthEdgeInPixel;
         private float _heightEdgeInPixel;
+        private Vector3 _startPosition;
 
         public Vector2 TargetScreenPosition => _targetScreenPosition;
     
@@ -22,6 +24,7 @@ namespace Core.Camera
             _camera = GetComponent<UnityEngine.Camera>();
             _widthEdgeInPixel = _shearEdge * _camera.pixelWidth;
             _heightEdgeInPixel = 0.5f * _camera.pixelHeight;
+            _startPosition = transform.position;
         }
     
        
@@ -43,6 +46,11 @@ namespace Core.Camera
                 _camera.transform.position = cameraPosition;
             }
             
+        }
+
+        public void MoveToStartPoint()
+        {
+            _camera.transform.position = _startPosition;
         }
 
     }

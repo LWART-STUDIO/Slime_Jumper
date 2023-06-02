@@ -11,6 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 6eb86e4931b506a408fd1477edec61ea, type: 3}
   m_ValidKeywords:
   - SHAPE1CONTRAST_ON
+  - SHAPE2CONTRAST_ON
+  - SHAPE2_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -66,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Shape2Tex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 40a1f25ed30b9ec4bae4bdeac053ec07, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Shape3DistortTex:
@@ -167,16 +169,16 @@ Material:
     - _ShakeUvY: 4
     - _Shape1MaskPow: 1
     - _Shape2AlphaWeight: 2
-    - _Shape2Brightness: 0
+    - _Shape2Brightness: 0.329
     - _Shape2ColorWeight: 2
-    - _Shape2Contrast: 1
+    - _Shape2Contrast: 1.41
     - _Shape2DistortAmount: 0.5
     - _Shape2DistortXSpeed: 0.1
     - _Shape2DistortYSpeed: 0.1
     - _Shape2RotationOffset: 0
     - _Shape2RotationSpeed: 0
     - _Shape2XSpeed: 0
-    - _Shape2YSpeed: 0
+    - _Shape2YSpeed: 0.22
     - _Shape3AlphaWeight: 2
     - _Shape3Brightness: 0
     - _Shape3ColorWeight: 2

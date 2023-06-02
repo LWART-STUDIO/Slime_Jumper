@@ -1,12 +1,13 @@
 using Core.Camera;
 using UnityEngine;
+using Zenject;
 
 namespace Core.Player
 {
     public class PlayerStateControl : MonoBehaviour
     {
-        [SerializeField] private Player _target;
-        [SerializeField] private CameraMover _cameraMover;
+        [Inject] private Player _target;
+        [Inject] private CameraMover _cameraMover;
         private void Update()
         {
             if (_cameraMover.TargetScreenPosition.y < 0)

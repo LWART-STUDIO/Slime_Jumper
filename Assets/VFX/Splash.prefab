@@ -4983,6 +4983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7595704688541692346}
   - component: {fileID: 7595704688541692347}
+  - component: {fileID: 775449695185537856}
   - component: {fileID: 7595704688541692348}
   - component: {fileID: 4953901871906656960}
   m_Layer: 6
@@ -4999,7 +5000,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7595704688541692349}
-  m_LocalRotation: {x: -0.00000008750427, y: 0, z: 0.7071948, w: 0.7070188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.2, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
@@ -5022,7 +5023,7 @@ ParticleSystem:
   serializedVersion: 8
   lengthInSec: 1
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 3
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -9856,6 +9857,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &775449695185537856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7595704688541692349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638396ba906f76e488a3f338b742ebe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!199 &7595704688541692348
 ParticleSystemRenderer:
   serializedVersion: 6
